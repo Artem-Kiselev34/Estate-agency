@@ -1,0 +1,21 @@
+html {
+	font-size: 10px;
+	line-height: 10px;
+	color: $title-text-color;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $link-text-color;
+}
