@@ -2,3 +2,30 @@ html {
   font-size: 10px;
   line-height: 10px;
   color: #000000; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3 {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+.header-nav {
+  background: #CFA55B; }
+  .header-nav__link {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #ffffff; }
+    .header-nav__link:not(:last-child) {
+      margin-right: 30px; }
+  .header-nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 0; }
