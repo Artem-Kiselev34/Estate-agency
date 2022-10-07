@@ -1,0 +1,25 @@
+.header {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	&__logo-block {
+		display: inline-grid;
+	}
+
+	// &__logo-img {}
+
+	&__logo-title {
+		font-size: 2.7rem;
+		line-height: 100%;
+		color: $mainColor;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		line-height: 100%;
+	}
+}
