@@ -5,11 +5,16 @@
 3.git commit -m "comment"
 4.git push origin branch_name
 
-Structure site
-1) Header
-2) First screen-description
-3) About
-4) Info
-5) Catalog-slider
-6) Сonsultation
-7) Footer
+1.Structure site
+- header-nav
+- header
+- About
+- Info
+- Catalog-slider
+- Сonsultation
+- Footer
+
+2.Общие элементы
+- info-card
+- default-btn
+
