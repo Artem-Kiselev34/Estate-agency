@@ -15,6 +15,5 @@
 - Footer
 
 2.Общие элементы
-- info-card
 - default-btn
-
+- info-card

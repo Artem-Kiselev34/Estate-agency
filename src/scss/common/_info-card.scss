@@ -1,0 +1,76 @@
+
+$info-card-img-height: 370px;
+
+.info-card {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 12px;
+	margin-bottom: 74px;
+
+	&__img {
+		position: relative;
+        top: 130px;
+		height: $info-card-img-height;
+		border-radius: 10px;
+	}
+
+	&__section-title {
+		display: block;
+		text-align: center;
+		margin-bottom: 55px;
+	}
+
+	&__title {
+		font-size: 3rem;
+		line-height: 3.6rem;
+		color: $info-title-color;
+	}
+
+	&__title--color {
+		color: $mainColor;
+	}
+
+	&__list-title {
+		margin-bottom: 45px;
+
+		li:first-child {
+			margin-bottom: 42px;
+		}
+	}
+
+	&__decor-title::before {
+		content: "";
+	    background-image: url('/src/assete/info-card/romb.svg');
+		float: left;
+		margin: 2px 20px 0 0;
+		width: 27px;
+		height: 27px;
+	}
+
+	&__sub-title {
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		color: $title-text-color2;
+		margin-bottom: 32px;
+	}
+
+	&__number {
+		font-weight: 900;
+		font-size: 9.6rem;
+		line-height: 11.3rem;
+		color: $mainColor;
+		opacity: 30%;
+	}
+
+	&__offer-btn {
+		background: $mainColor;
+		color: $mainColor2;
+		padding: 32px 66px;
+		border: none;
+	}
+
+	&__text-btn {
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+	}
+}

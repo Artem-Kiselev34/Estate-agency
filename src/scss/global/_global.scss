@@ -19,3 +19,12 @@ a {
 	text-decoration: none;
 	color: $link-text-color;
 }
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+  }
+
+li {
+	list-style-type: none;
+}
