@@ -7,9 +7,17 @@ $info-card-img-height: 370px;
 	padding: 12px;
 	margin-bottom: 74px;
 
+	&__main-block {
+		display: flex;
+		flex-direction: column;
+	}
+	&__img-block {
+		display: flex;
+		justify-content: center;
+		align-items: end;
+	}
+
 	&__img {
-		position: relative;
-        top: 130px;
 		height: $info-card-img-height;
 		border-radius: 10px;
 	}
@@ -27,7 +35,7 @@ $info-card-img-height: 370px;
 	}
 
 	&__list-title {
-		margin-bottom: 45px;
+		margin-bottom: 13px;
 
 		li:first-child {
 			margin-bottom: 42px;

@@ -38,9 +38,14 @@ li {
   justify-content: space-evenly;
   padding: 12px;
   margin-bottom: 74px; }
+  .info-card__main-block {
+    display: flex;
+    flex-direction: column; }
+  .info-card__img-block {
+    display: flex;
+    justify-content: center;
+    align-items: end; }
   .info-card__img {
-    position: relative;
-    top: 130px;
     height: 370px;
     border-radius: 10px; }
   .info-card__section-title {
@@ -52,7 +57,7 @@ li {
     line-height: 3.6rem;
     color: #454545; }
   .info-card__list-title {
-    margin-bottom: 45px; }
+    margin-bottom: 13px; }
     .info-card__list-title li:first-child {
       margin-bottom: 42px; }
   .info-card__decor-title::before {
@@ -85,13 +90,14 @@ li {
   display: flex;
   align-items: center; }
   .callback-block__tel-number {
-    font-size: 1.6rem;
-    line-height: 1.9rem;
-    color: #CFA55B;
+    font-size: 2.4rem;
+    color: #ffffff;
     margin-right: 40px; }
   .callback-block__callback-btn {
+    color: #ffffff;
     border-color: #CFA55B;
-    background-color: transparent; }
+    background-color: transparent;
+    padding: 16px 25px; }
 
 .header-nav {
   position: relative;
@@ -124,6 +130,7 @@ li {
     line-height: 100%;
     color: #CFA55B; }
   .header__text {
+    color: #ffffff;
     font-size: 1.8rem;
     line-height: 100%; }
 
@@ -142,7 +149,8 @@ li {
   .presentation__title {
     font-size: 3.2rem;
     line-height: 3.5rem;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    color: #ffffff; }
   .presentation__btn {
     font-size: 1.8rem;
     line-height: 2.1rem;
