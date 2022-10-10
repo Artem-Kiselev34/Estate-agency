@@ -8,13 +8,13 @@
 1.Structure site
 - header-nav
 - header
+- presentation
 - About
-- Info
+- Info-block
 - Catalog-slider
 - Сonsultation
 - Footer
 
 2.Общие элементы
-- info-card
 - default-btn
-
+- info-card

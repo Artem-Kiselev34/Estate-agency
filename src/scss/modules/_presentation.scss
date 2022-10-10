@@ -1,0 +1,55 @@
+.presentation {
+	position: relative;
+	bottom: 156px;
+	background-image: url(../assete/presentation/presentation.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	&__wrapper {
+		padding: 200px 0;
+	}
+
+	&__main-info {
+		position: relative;
+		top: 70px;
+	}
+
+	&__title {
+		font-size: 3.2rem;
+		line-height: 3.5rem;
+		margin-bottom: 80px;
+		color: $mainColor2;
+	}
+
+	&__btn {
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		background: $mainColor;
+		color: $mainColor2;
+		padding: 30px 45px;
+		border: none;
+		margin-bottom: 150px;
+	}
+
+	ul {
+		display: flex;
+	}
+
+	&__dot::before {
+		content: "";
+		background-image: url(/src/assete/presentation/dot.svg);
+		float: left;
+		margin: 2px 20px 25px 0;
+		width: 14px;
+		height: 14px;
+		box-shadow: 0px 0px 0px 4px #766751;
+		border-radius: 50%;
+	}
+
+	&__sub-title {
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		color: $mainColor2;
+		margin-right: 150px;
+	}	
+}

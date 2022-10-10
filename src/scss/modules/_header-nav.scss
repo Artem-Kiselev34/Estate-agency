@@ -1,4 +1,6 @@
 .header-nav {
+	position: relative;
+	z-index: 2;
 	background: $mainColor;
 
 	&__link { 

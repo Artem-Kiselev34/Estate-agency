@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+	z-index: 2;
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -19,6 +21,7 @@
 	}
 
 	&__text {
+		color: $mainColor2;
 		font-size: 1.8rem;
 		line-height: 100%;
 	}
