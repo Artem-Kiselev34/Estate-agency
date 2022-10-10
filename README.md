@@ -8,8 +8,9 @@
 1.Structure site
 - header-nav
 - header
+- presentation
 - About
-- Info
+- Info-block
 - Catalog-slider
 - Сonsultation
 - Footer

@@ -26,10 +26,6 @@ $info-card-img-height: 370px;
 		color: $info-title-color;
 	}
 
-	&__title--color {
-		color: $mainColor;
-	}
-
 	&__list-title {
 		margin-bottom: 45px;
 
@@ -63,14 +59,11 @@ $info-card-img-height: 370px;
 	}
 
 	&__offer-btn {
+		font-size: 1.8rem;
+		line-height: 2.1rem;
 		background: $mainColor;
 		color: $mainColor2;
 		padding: 32px 66px;
 		border: none;
-	}
-
-	&__text-btn {
-		font-size: 1.8rem;
-		line-height: 2.1rem;
 	}
 }
