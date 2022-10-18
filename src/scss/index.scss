@@ -1,13 +1,17 @@
 @import "./constants/constants";
+
 @import "./global/global";
+@import "./global/reset";
 
 @import "./common/default-btn";
-@import "./common/info-card";
+@import "./common/about";
 @import "./common/callback-block";
 
 @import "./modules/header-nav";
-@import "./modules/header";
-@import "./modules/presentation";
+@import "./modules/header-content";
+@import "./modules/info-block";
+@import "./modules/decor-circle";
+
 
 
 

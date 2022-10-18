@@ -6,9 +6,7 @@
 4.git push origin branch_name
 
 1.Structure site
-- header-nav
 - header
-- presentation
 - About
 - Info-block
 - Catalog-slider

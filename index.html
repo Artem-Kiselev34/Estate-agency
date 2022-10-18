@@ -6,128 +6,180 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./src/css/index.css">
 	<title>Агенство недвижимости</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2?family= Open+Sans:ital,wght@0,400;1,400;1,500;1,600;1,700 & семья= Open+Sans:wght@400;500;600;700;800 & display=swap" rel="stylesheet">
 </head>
 <body>
-	<!------------------ header-nav -------------->
-	<section class="header-nav">
-		<div class="wrapper header-nav__wrapper">
-			<a href="#" class="header-nav__link">О компании</a>
-			<a href="#" class="header-nav__link">Продажа</a>
-			<a href="#" class="header-nav__link">Каталог</a>
-			<a href="#" class="header-nav__link">Наши офисы</a>
-		</div>
-	</section>
-
 	<!------------------- header ---------------->
 	<header class="header">
-		<div class="wpapper header__wrapper">
-			<a href="#" class="header__logo-block">
-				<img class="header__logo-img" src="./src/assete/header/incom-logo.svg" alt="logo">
-				<span class="header__logo-title">Недвижимость</span>
-			</a>
-			<div class="header__text">
-				Все работают с недвижимостью,<br>а мы - с людьми.
-			</div>
-			<div class="header__callback-block callback-block">
-				<a href="tel:86845550102" class="header__tel-number callback-block__tel-number">
-					8 (684) 555-01-02
-				</a>
-
-				<button class="header__callback-btn callback-block__callback-btn default-btn">
-					Бесплатная консультация
-				</button>
-			</div>
+		<div class="wrapper">
+				<div class="header__top">
+					<nav class="header__nav">
+						<div class="header__logo-block">
+							<a href="#">
+								<h2 class="header__logo-title">инком</h2>
+								<span class="header__logo-subtitle">Недвижимость</span>
+							</a>
+				        </div>
+						<div>
+							<a href="#" class="header__nav-link">О компании</a>
+							<a href="#" class="header__nav-link">Продажа</a>
+							<a href="#" class="header__nav-link">Каталог</a>
+							<a href="#" class="header__nav-link">Наши офисы</a>
+				        </div>
+						<div class="header__callback-block callback-block">
+						<a href="tel:86845550102" class="header__tel-number callback-block__tel-number">
+							8 (684) 555-01-02
+						</a>
+		
+						<button class="header__callback-btn callback-block__callback-btn default-btn">
+							Бесплатная консультация
+						</button>
+						</div>
+				    </nav>
+				</div>
+			
+					<div class="header__content">
+					<h2 class="header__title">Агентство недвижимости <span class="--text-color">ИНКОМ</span> 
+						Мы гарантировано<br>
+						продадим  вашу недвижимость<br> 
+						на<span class="--text-color"> 15% дороже</span></h2>
+						<button class="default-btn header__btn">Узнать стоимость продажи</button>
+						<ul class="header__list">
+							<li class="header__dot header__subtitle">Продано недвижимости на 3 млрд 
+								<br>рублей за 5 лет</li>
+							<li class="header__dot header__subtitle">Юридическое  сопровождение</li>
+							<li class="header__dot header__subtitle">Квартиры по Москве и области
+								<br>на любой выбор</li>
+						</ul>
+				</div>
 		</div>
+		
 	</header>
-
-    <!------------------- presentation -------------------->
-	<section class="presentation">
-		<div class="wrapper presentation__wrapper">
-			<div class="presentation__main-info">
-				<h2 class="presentation__title">Агентство недвижимости <span class="--text-color">ИНКОМ</span>  
-					<br>Мы гарантировано
-					<br>продадим  вашу недвижимость 
-					<br>на<span class="--text-color">15% дороже</span></h2>
-					<button class="default-btn presentation__btn">Узнать стоимость продажи</button>
-					<ul>
-						<li class="presentation__dot presentation__sub-title">Продано недвижимости на 3 млрд 
-							<br>рублей за 5 лет</li>
-						<li class="presentation__dot presentation__sub-title">Юридическое  сопровождение</li>
-						<li class="presentation__dot presentation__sub-title">Квартиры по Москве и области
-							<br>на любой выбор</li>
-					</ul>
-			</div>
-		</div>
-	</section>
 
 	<!------------------- About --------------------->
 	<section class="about">
 		<div class="wrapper about__wrapper">
-			<span class="info-card__section-title">
-				<h2 class="info-card__title">Почему мы продаем дорого и делаем</h2>
-				<h2 class="info-card__title">это в <span class="--text-color">2 раза быстрее</span></h2>
+			<span class="about__section-title">
+				<h2>Почему мы продаем дорого и делаем это в <span class="--text-color">2 раза быстрее</span></h2>
 			</span>
 			<div class="about__items">
-				<div class="about__item info-card">
-					<div class="info-card__block info-card__main-block">
-						<span class="info-card__number">01</span>
-						<ul class="info-card__list-title">
-							<li><h2 class="info-card__title">Собственная база покупателей</h2></li>
-							<li class="info-card__decor-title"><p class="info-card__sub-title">Создаем спрос на объект еще до размещения
+				<div class="about__item">
+					<img class="decor-circle-up" src="./src/assete/about/circle-top.svg" alt="circle">
+	
+					<div class="about__block">
+						<span class="about__number">01</span>
+						<ul class="about__list-title">
+							<li><h2 class="about__title">Собственная база покупателей</h2></li>
+							<li class="about__decor-title"><p class="about__subtitle">Создаем спрос на объект еще до размещения
 							  <br>его в рекламе</p></li>
-							<li class="info-card__decor-title"><p class="info-card__sub-title">Используем закрытые базы риэлторов</p></li>
-							<li class="info-card__decor-title"><p class="info-card__sub-title">Продаем через собственную наработанную
+							<li class="about__decor-title"><p class="about__subtitle">Используем закрытые базы риэлторов</p></li>
+							<li class="about__decor-title"><p class="about__subtitle">Продаем через собственную наработанную
 							  <br>базу из 6000 обьектов</p></li>
 						</ul>
-						<button class="info-card__offer-btn default-btn info-card__text-btn">Получите превью предложения</button>
+						<button class="about__offer-btn default-btn about__text-btn">Получите превью предложения</button>
 					</div>
 
-					<div class="info-card__img-block">
-					   <img src="./src/assete/info-card/info-img.jpg" class="info-card__img" alt="image">
+					<div class="about__img-block">
+					   <img src="./src/assete/about/info-img.jpg" class="about__img" alt="image">
 					</div>
 				</div>
 
-
-				<div class="about__item info-card">
-					<div class="info-card__img-block">
-						<img src="./src/assete/info-card/info-img2.jpg" class="info-card__img" alt="image">
+				<div class="about__item">
+					<div class="about__img-block">
+						<img src="./src/assete/about/info-img2.jpg" class="about__img" alt="image">
 					 </div>
-					<div class="info-card__block info-card__main-block">
-						<span class="info-card__number">02</span>
-						<ul class="info-card__list-title">
-							<li><h2 class="info-card__title">Собственная база покупателей</h2></li>
-							<li class="info-card__decor-title"><p class="info-card__sub-title">Создаем спрос на объект еще до размещения
+					<div class="about__block info-card__main-block">
+						<span class="about__number">02</span>
+						<ul class="about__list-title">
+							<li><h2 class="about__title">Собственная база покупателей</h2></li>
+							<li class="about__decor-title"><p class="about__subtitle">Создаем спрос на объект еще до размещения
 							  <br>его в рекламе</p></li>
-							<li class="info-card__decor-title"><p class="info-card__sub-title">Используем закрытые базы риэлторов</p></li>
-							<li class="info-card__decor-title"><p class="info-card__sub-title">Продаем через собственную наработанную
+							<li class="about__decor-title"><p class="about__subtitle">Используем закрытые базы риэлторов</p></li>
+							<li class="about__decor-title"><p class="about__subtitle">Продаем через собственную наработанную
 							  <br>базу из 6000 обьектов</p></li>
 						</ul>
-						<button class="info-card__offer-btn default-btn info-card__text-btn">Получите превью предложения</button>
+						<button class="about__offer-btn default-btn about__text-btn">Получите превью предложения</button>
 					</div>
 				</div>
 
-				<div class="about__item info-card">
-					<div class="info-card__block info-card__main-block">
-						<span class="info-card__number">03</span>
-						<ul class="info-card__list-title">
-							<li><h2 class="info-card__title">Собственная база покупателей</h2></li>
-							<li class="info-card__decor-title"><p class="info-card__sub-title">Создаем спрос на объект еще до размещения
+				<div class="about__item">
+					<img class="decor-circle" src="./src/assete/about/circle.svg" alt="circle">
+					
+	
+					<div class="about__block">
+						<span class="about__number">03</span>
+						<ul class="about__list-title">
+							<li><h2 class="about__title">Собственная база покупателей</h2></li>
+							<li class="about__decor-title"><p class="about__subtitle">Создаем спрос на объект еще до размещения
 							  <br>его в рекламе</p></li>
-							<li class="info-card__decor-title"><p class="info-card__sub-title">Используем закрытые базы риэлторов</p></li>
-							<li class="info-card__decor-title"><p class="info-card__sub-title">Продаем через собственную наработанную
+							<li class="about__decor-title"><p class="about__subtitle">Используем закрытые базы риэлторов</p></li>
+							<li class="about__decor-title"><p class="about__subtitle">Продаем через собственную наработанную
 							  <br>базу из 6000 обьектов</p></li>
 						</ul>
-						<button class="info-card__offer-btn default-btn info-card__text-btn">Получите превью предложения</button>
+						<button class="about__offer-btn default-btn about__text-btn">Получите превью предложения</button>
 					</div>
 
-					<div class="info-card__img-block">
-					   <img src="./src/assete/info-card/info-img3.jpg" class="info-card__img" alt="image">
+					<div class="about__img-block">
+					   <img src="./src/assete/about/info-img3.jpg" class="about__img" alt="image">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!-------------------- info-block ---------------->
+	<section class="info-block">
+		 <div class="wrapper info-block__wrapper">
+			<div class="info-block__sale">
+				<h2 class="info-block__title"><span class="--text-color">Продажа недвижимости в</span>
+					<br>Москве и Подмосковье</h2>
+					<p class="info-block__subtitle">Мы оказываем риэлторские услуги по аренде и продаже недвижимости
+						во всех сегментах. С помощью наших специалистов вы сможете купить
+						элитную недвижимость в Москве и Подмосковье, а также приобрести
+						жилье эконом-класса.</p>
+					<p class="info-block__subtitle">Специалисты нашего агентства помогут в подборе оптимального для
+						вас варианта и оформят сделку по  купле-продаже недвижимости 
+						максимально надежно и быстро!</p>
+			</div>
+
+			<div class="info-block__sale-card">
+				
+<svg class="info-block__decor-card" width="485" height="618" viewBox="0 0 485 618" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g filter="url(#filter0_d_9_3)">
+	<rect x="31.5" y="27.5" width="422" height="555" rx="8.5" stroke="#CFA55B" stroke-width="3"/>
+	</g>
+	<defs>
+	<filter id="filter0_d_9_3" x="0" y="0" width="485" height="618" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+	<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+	<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+	<feOffset dy="4"/>
+	<feGaussianBlur stdDeviation="15"/>
+	<feColorMatrix type="matrix" values="0 0 0 0 0.811765 0 0 0 0 0.647059 0 0 0 0 0.356863 0 0 0 0.5 0"/>
+	<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9_3"/>
+	<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9_3" result="shape"/>
+	</filter>
+	</defs>
+	</svg>
+	
+				<ul>
+				<li class="info-block__card-title"><h3> Продайте недвижимость
+					в залоге, ипотеке или с 
+					долгами без потери в цене</h3></li>
+					<li class="info-block__card-subtitle"><p>Агентство недвижимости ИНКОМ — все риэлторские
+						услуги: покупка, продажа, обмен, аренда жилой и
+						коммерческой недвижимости Москвы и Подмосковье</p></li>
+					<li class="info-block__card-subtitle info-block__decor"><p>Создаем спрос на объект еще до
+						размещения его в рекламе</p></li>
+					<li class="info-block__card-subtitle info-block__decor"><p>Используем закрытые базы риэлторов</p></li>
+					<li class="info-block__card-subtitle info-block__decor"><p>Продаем через собственную наработанную
+						базу из 6000 обьектов</p></li>
+					</ul>
+				<button class="info-block__btn default-btn">Больше информации</button>
+			</div>
+		 </div>
+	</section>
 
 </body>
 </html>
