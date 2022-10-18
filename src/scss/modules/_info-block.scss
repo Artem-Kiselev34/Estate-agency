@@ -1,0 +1,93 @@
+
+.info-block {
+	position: relative;
+    z-index: 1;
+	background: url(../assete/info-block/background__info-block.jpg);
+	background-position: bottom;
+    background-size: cover;
+	&__wrapper {
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__sale {
+		max-width: 600px;
+		padding: 190px 0 220px;
+	}
+
+	&__title {
+		 font-size: 3.6rem;
+		line-height: 100%;
+		color: $mainColor2;
+		margin-bottom: 53px;
+	}
+
+	&__subtitle {
+		font-weight: 700;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		color: $mainColor2;
+		// max-width: 550px;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		  }
+
+	}
+
+	&__sale-card {
+		max-width: 450px;
+		height: max-content;
+		background:  $mainColor2;
+		padding: 36px 34px 42px;
+		border-radius: 10px;
+	}
+
+	&__decor-card {
+		position: absolute;
+		z-index: -1;
+	}
+
+
+
+	&__card-title {
+		font-size: 2.4rem;
+		line-height: 2.8rem;
+		margin-bottom: 23px;
+	}
+
+	&__card-subtitle {
+		font-weight: 700;
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+		margin-bottom: 30px;
+		
+		&:nth-child(2) {
+			margin-bottom: 37px;
+		  }
+		&:last-child {margin-bottom: 54px;}
+	}
+
+	&__decor::before { 
+			content: "";
+			background-image: url(/src/assete/about/romb.svg);
+			float: left;
+			margin: 2px 16px 0 0;
+			width: 27px;
+			height: 27px;
+	}
+
+	&__btn {
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0);
+		font-weight: 600;
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+		color: $mainColor2;
+		background: $mainColor;
+		padding: 25px 94px;
+		border: none;
+	}
+}
