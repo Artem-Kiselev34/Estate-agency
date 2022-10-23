@@ -36,9 +36,10 @@ $info-card-img-height: 370px;
 
 		& h2 {
 			max-width: 680px;
-		    font-size: 3.6rem;
-		    line-height: 4.3rem;
+			font-size: clamp(2.2rem, 5vw, 3.6rem);
+			line-height: clamp(2.5rem, 6vw, 4.3rem);
 		    color: $info-title-color;
+			
 		}
 	}
 

@@ -5,6 +5,9 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif; }
+  body._lock {
+    background: #ccc;
+    overflow: hidden; }
 
 h1,
 h2,
@@ -25,14 +28,10 @@ ul {
 li {
   list-style-type: none; }
 
-.wrapper {
-  max-width: 1200px;
+.container {
+  max-width: 1270px;
   margin: 0 auto;
   padding: 0 15px; }
-
-footer {
-  display: flex;
-  justify-content: center; }
 
 .--text-color {
   color: #CFA55B; }
@@ -88,8 +87,8 @@ a {
     margin-bottom: 55px; }
     .about__section-title h2 {
       max-width: 680px;
-      font-size: 3.6rem;
-      line-height: 4.3rem;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: clamp(2.5rem, 6vw, 4.3rem);
       color: #454545; }
   .about__title {
     font-size: 2.6rem;
@@ -127,91 +126,141 @@ a {
     padding: 32px 66px;
     border: none; }
 
-.callback-block {
-  display: flex;
-  align-items: center; }
-  .callback-block__tel-number {
-    font-size: 2.4rem;
-    color: #ffffff;
-    margin-right: 40px; }
-  .callback-block__callback-btn {
-    color: #ffffff;
-    border-color: #CFA55B;
-    background-color: transparent;
-    padding: 16px 25px; }
-
 .header {
-  position: relative;
-  background-image: url(../assete/header/presentation.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 900px;
-  z-index: 2; }
-  .header__logo-block {
-    width: min-content; }
-  .header__logo-title {
-    font-size: 6.3rem;
-    line-height: 3.6rem;
-    color: #ffffff; }
-  .header__logo-subtitle {
-    font-size: 2.7rem;
-    line-height: 3.6rem;
-    color: #CFA55B;
-    margin-left: 3px; }
-  .header__text {
-    max-width: 280px;
-    color: #ffffff;
-    font-size: 1.8rem;
-    line-height: 2.2rem; }
-  .header__nav {
+  padding: 20px 0;
+  background-color: #586085; }
+  .header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0 20px; }
-  .header__nav-link {
-    font-size: 1.8rem;
-    line-height: 1.6rem;
+    gap: 15px; }
+  .header__logo {
+    max-width: 150px; }
+  .header__logo-title {
+    font-size: 4.2rem;
+    line-height: 2rem;
     color: #ffffff; }
-    .header__nav-link:not(:last-child) {
-      margin-right: 30px; }
+  .header__logo-subtitle {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    color: #CFA55B;
+    margin-left: 3px; }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    gap: clamp(1.8rem, calc(-8.95rem + 10vw), 8rem); }
+  .header__menu {
+    display: flex; }
+  .header__callback-block {
+    display: flex;
+    align-items: center;
+    gap: 20px; }
+  .header__tel {
+    font-size: 1.8rem;
+    color: #ffffff; }
+    @media (max-width: 384px) {
+      .header__tel {
+        display: none; } }
+  .header__btn {
+    color: #ffffff;
+    border-color: #CFA55B;
+    background-color: transparent;
+    padding: 12px 15px; }
 
-.header__content {
-  padding: 140px 0 140px; }
+@media (max-width: 1024px) {
+  .menu {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: -100%;
+    right: 0;
+    overflow: auto;
+    height: 100vh;
+    width: 80%;
+    background-color: cadetblue;
+    padding: 20px 0 50px;
+    transition: left .2s; }
+    .menu._active {
+      left: 0; } }
 
-.header__title {
-  max-width: 600px;
-  font-size: 3.6rem;
-  line-height: 4.3rem;
-  margin-bottom: 80px;
-  color: #ffffff; }
+.menu__items {
+  display: flex;
+  align-items: center;
+  gap: 30px; }
+  @media (max-width: 1024px) {
+    .menu__items {
+      flex-direction: column;
+      margin: auto; } }
 
-.header__btn {
+.menu__link {
+  position: relative;
   font-size: 1.8rem;
-  line-height: 2.1rem;
-  background: #CFA55B;
+  line-height: 1.6rem;
   color: #ffffff;
-  padding: 30px 45px;
-  border: none;
-  margin-bottom: 150px; }
+  transition: color .2s; }
+  .menu__link:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: #CFA55B;
+    height: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s; }
+  @media (any-hover: hover) {
+    .menu__link:hover {
+      color: #CFA55B; }
+      .menu__link:hover:before {
+        opacity: 1;
+        visibility: visible; } }
+  @media (max-width: 1024px) {
+    .menu__link {
+      line-height: 50px;
+      font-size: 30px; } }
 
-.header ul {
-  display: flex; }
+.menu-icon {
+  display: none; }
+  @media (max-width: 1024px) {
+    .menu-icon {
+      display: block;
+      height: 18px;
+      width: 30px;
+      position: relative;
+      cursor: pointer;
+      z-index: 5; }
+      .menu-icon span {
+        transition: all 0.3s ease 0s;
+        top: calc(50% - 1px);
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff; }
+        .menu-icon span:first-child {
+          top: 0; }
+        .menu-icon span:last-child {
+          top: auto;
+          bottom: 0; }
+      .menu-icon._active span {
+        transform: scale(0); }
+        .menu-icon._active span:first-child {
+          transform: rotate(-45deg);
+          top: calc(50% - 1px); }
+        .menu-icon._active span:last-child {
+          transform: rotate(45deg);
+          bottom: calc(50% - 1px); } }
 
-.header__dot::before {
-  content: "";
-  background-image: url(/src/assete/header/dot.svg);
-  float: left;
-  margin: 2px 20px 25px 0;
-  width: 14px;
-  height: 14px;
-  box-shadow: 0px 0px 0px 4px #766751;
-  border-radius: 50%; }
+@media (any-hover: hover) {
+  .consult:hover {
+    background-color: #CFA55B;
+    transition: background-color .2s; } }
 
-.header__subtitle {
-  font-size: 1.8rem;
-  line-height: 2.1rem;
-  color: #ffffff;
-  margin-right: 90px; }
+@media (max-width: 610px) {
+  .consult {
+    display: none; } }
 
 .info-block {
   position: relative;
@@ -296,3 +345,23 @@ a {
   right: 50%;
   min-width: 100%;
   height: auto; }
+
+.catalog__wrapper {
+  padding-top: 70px;
+  margin-bottom: 70px; }
+
+.catalog__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #424242;
+  margin-bottom: 70px; }
+
+.catalog-circle {
+  position: absolute;
+  z-index: 0;
+  top: -162px;
+  left: 0;
+  right: 0; }
