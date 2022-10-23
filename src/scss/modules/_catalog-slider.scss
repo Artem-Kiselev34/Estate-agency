@@ -1,0 +1,24 @@
+.catalog {
+
+	&__wrapper {
+		padding-top: 70px;
+		margin-bottom: 70px;
+	}
+
+	&__title {
+		font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: $title-text-color2;
+margin-bottom: 70px;
+	}
+}
+.catalog-circle {
+	position: absolute;
+	z-index: 0;
+    top: -162px;
+    left: 0;
+    right: 0;
+}
