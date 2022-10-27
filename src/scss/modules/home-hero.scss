@@ -1,0 +1,20 @@
+.home-hero {
+	position: relative;
+    background: linear-gradient(to top, rgba(89, 106, 114, 0.6), rgba(87, 99, 112, 0.4)), url('/src/assete/main-banner/main-citycom.jpg') no-repeat;
+	background-size: cover;
+	&__wrapper {
+		max-width: 930px;
+		padding: 40px 12px 110px;
+		@media (max-width: 840px) {
+			padding: 35px 12px 60px;
+		}
+	}
+}
+ .title {
+	margin-bottom: clamp(4.2rem, 9vw, 7.5rem); 
+	&__text {
+		font-size: clamp(2.5rem, 6vw, 4.5rem);
+        line-height: clamp(2.5rem, 6vw, 5rem);
+		color: #ffff;
+	}
+ }
