@@ -1,7 +1,8 @@
 .header {
-	padding: 15px 0;
-	background-color: rgb(88, 96, 133);
-
+	position: relative;
+    z-index: 1;
+	padding: 8px 0 10px;
+	background: linear-gradient(0deg, #020024 0%, #6da0aa 0%, #5d5e9c 100%);
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -10,7 +11,7 @@
 	}
 
 	&__logo {
-		max-width: 150px;
+		// max-width: 150px;
 	}
 
 	&__logo-title {
@@ -45,7 +46,7 @@
 	&__tel {
 		font-size: 1.8rem;
 		color: $mainColor2;
-		@media (max-width: 384px) {
+		@media (max-width: 700px) {
 			display: none;
 		}
 	}
@@ -59,7 +60,7 @@
 }
 
 .menu {
-	@media (max-width: 1024px) {
+	@media (max-width: 1070px) {
 		display: flex;
 		position: absolute;
 		z-index: 1;
@@ -80,8 +81,8 @@
 	&__items {
 		display: flex;
 		align-items: center;
-		gap: 30px;
-		@media (max-width: 1024px) {
+		gap: clamp(1.5rem, calc(-6.95rem + 8vw), 3rem);
+		@media (max-width: 1070px) {
 			flex-direction: column;
 			margin: auto;
 		}
@@ -107,14 +108,14 @@
 		}
 		@media (any-hover: hover) {
 			&:hover {
-				color: #CFA55B;
+				// color: #CFA55B;
 				&:before {
 					opacity: 1;
 					visibility: visible;
 				}
 			}
 		}
-		@media (max-width: 1024px) {
+		@media (max-width: 1070px) {
 			line-height: 50px;
 			font-size: 30px;
 		}
@@ -123,7 +124,7 @@
 
 .menu-icon {
 	display: none;
-	@media (max-width: 1024px) {
+	@media (max-width: 1070px) {
 	  display: block;
 	  height: 18px;
 	  width: 30px;
