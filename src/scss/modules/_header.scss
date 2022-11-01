@@ -10,9 +10,7 @@
 		gap: 15px;
 	}
 
-	&__logo {
-		// max-width: 150px;
-	}
+	
 
 	&__logo-title {
 		font-size: 4.2rem;
@@ -30,7 +28,8 @@
 	&__nav {
 		display: flex;
 		align-items: center;
-		gap: clamp(1.8rem, calc(-8.95rem + 10vw), 8rem);
+		// gap: clamp(1.8rem, calc(-8.95rem + 10vw), 8rem);
+		gap: clamp(0.8rem, calc(-8.95rem + 9vw), 7rem);
 	}		
 
 	&__menu {
@@ -40,7 +39,7 @@
 	&__callback-block {
 		display: flex;
 	    align-items: center;
-		gap: 20px;
+		gap: clamp(0.8rem, calc(-8.95rem + 9vw), 2rem);
 	}
 
 	&__tel {
@@ -69,8 +68,8 @@
 		right: 0;
 		overflow: auto;
 		height: 100vh;
-		width: 80%;
-		background-color: cadetblue;
+		width: 70%;
+		background-color: $mainColor2;
 		padding: 20px 0 50px;
 		transition: left .2s;
 		&._active {
@@ -81,7 +80,9 @@
 	&__items {
 		display: flex;
 		align-items: center;
-		gap: clamp(1.5rem, calc(-6.95rem + 8vw), 3rem);
+		// gap: clamp(1.5rem, calc(-6.95rem + 8vw), 3rem);
+		gap: clamp(1rem, calc(-5.95rem + 7vw), 4rem);
+    
 		@media (max-width: 1070px) {
 			flex-direction: column;
 			margin: auto;
@@ -118,12 +119,12 @@
 		@media (max-width: 1070px) {
 			line-height: 50px;
 			font-size: 30px;
+			color: $title-text-color;
 		}
 	}
 }
 
 .menu-icon {
-	display: none;
 	@media (max-width: 1070px) {
 	  display: block;
 	  height: 18px;
@@ -170,9 +171,33 @@
 			transition: background-color .2s;
 		}
 	}
+	&:active {
+		background-color: #B28D4E;
+	}
 	@media (max-width: 610px) {
 		display: none;
 	}
 }
 
-
+.overlay {
+	@media (max-width: 1070px) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+	&._active {
+		opacity: 1;
+        visibility: visible;
+	}
+  }
+}

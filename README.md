@@ -11,6 +11,7 @@
 1.Structure site
 - header
 - home-hero
+- primary
 - About
 - Info-block
 - Catalog-slider

@@ -4,15 +4,15 @@ html {
 	color: $title-text-color;
 }
 
+._lock {
+	overflow: hidden;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
-	&._lock {
-		background: #ccc;
-		overflow: hidden;
+	
 	}
-}
 
-
+	
 h1,
 h2,
 h3 {
@@ -47,3 +47,4 @@ li {
 .--text-color {
 	color: $mainColor;
 }
+
