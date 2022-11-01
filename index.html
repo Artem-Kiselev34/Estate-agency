@@ -18,21 +18,24 @@
 
 <body>
 	<!------------------- header ---------------->
-	<header class="header">
+	<header id="header" class="header">
 		<div class="container header__wrapper">
 			<a href="#" class="header__logo">
 				<img src="./src/assete/header/logo-citycom.svg" class="" alt="image" />
 			</a>
 
 			<div class="header__nav">
-			<nav class="header__menu menu">
-				<ul class="menu__items">
-					<li><a href="#" class="menu__link">О компании</a></li>
-					<li><a href="#" class="menu__link">Продажа</a></li>
-					<li><a href="#" class="menu__link">Каталог</a></li>
-					<li><a href="#" class="menu__link">Наши офисы</a></li>
-				</ul>
-			</nav>
+				<div class="overlay">	</div>
+					<nav class="header__menu menu">
+					<ul class="menu__items">
+						<li><a href="#primary" class="menu__link">О компании</a></li>
+						<li><a href="#page" class="menu__link">Продажа</a></li>
+						<li><a href="#header" class="menu__link">Каталог</a></li>
+						<li><a href="#header" class="menu__link">Наши офисы</a></li>
+					</ul>
+				</nav>
+			
+		
 			<div class="header__callback-block">
 				<a href="tel:86845550102" class="header__tel">
 					8 (684) 555-01-02
@@ -50,8 +53,11 @@
 		</div>
 		</div>
 	</header>
+	<!------------------- header ---------------->
 
-	<main class="page">
+	<!------------------- page ---------------->
+	<main id="page" class="page">
+		<!--------------- home-hero --------------->
 		<section class="home-hero">
 			<div class="container home-hero__wrapper">
 				<div class="home-hero___title title">
@@ -103,17 +109,73 @@
 						<div class="block-filter__dropdown">
 							<div class="block-filter__item">Квартира</div>
 							<div class="block-filter__item">Комната</div>
-							<div class="block-filter__item">Частный дом</div>
+							<div class="block-filter__item">Дом</div>
 						</div>
 					 </div>
 					 <div class="filter__btn">
-						<button class="">Поиск</button>
+						<button>Поиск</button>
 					 </div>
 				</div>
 			</div>
 		</section>
-	</main>
+		<!--------------- home-hero --------------->
+		
+		<!------------------- primary ------------------>
+		<section id="primary" class="primary">
+			<div class="container primary__wrapper">
+				<div class="primary__content">
+					<h1 class="primary__title">Продать дороже, чем дом по соседству</h1>
+					<p class="primary__text">Местные агенты Citycom правильно оценивают ваш дом и заставляют его сиять в Интернете. Начните с бесплатной консультации.</p>
+					<button class="primary__btn  default-btn">
+						Бесплатная консультация
+					</button>
+				</div>
+				<div class="primary__img"><img src="/src/assete/primary/park-with-blue-sky.jpg" alt="house"></div>
+			</div>
+			
+			<div class="container primary__wrapper col">
+				<div class="primary__img"><img src="/src/assete/primary/beautiful-villa.jpg" alt=""></div>
+				<div class="primary__content">
+					<h1 class="primary__title">Ваша идеальная аренда теперь на Citycom</h1>
+					<p class="primary__text">Найти квартиру, квартиру или дом, которые вы хотели бы арендовать, стало еще проще..</p>
+					<div class="rent">	
+						<div class="rent__block block-rent">
+						   <div class="block-rent__btn">
+							   <div class="block-rent__header">
+								<div class="block-rent__value">Квартиру или дом</div>
+								<div class="block-rent__icon"></div>	   
+							   </div>
+						   </div>
+						   <div class="block-rent__dropdown">
+							   <div class="block-rent__item">Квартира</div>
+							   <div class="block-rent__item">Комната</div>
+							   <div class="block-rent__item">Дом</div>
+						   </div>
+						</div>
+						<div class="rent__btn">
+						   <button>Поиск</button>
+						</div>
+				   </div>
+				</div>
+			</div>
 
+			<div class="container primary__wrapper">
+				<div class="primary__content">
+					<h1 class="primary__title">Получайте обновления рынка в режиме реального времени</h1>
+					<p class="primary__text">Аналитика рынка, мнения экспертов, мероприятия, акции и спецпредложения.</p>
+					<div class="subscribe__btn">
+						<button>Подписаться</button>
+					 </div>
+				</div>
+				<div class="primary__img"><img src="/src/assete/primary/businesspeople.jpg" alt=""></div>
+			</div>
+		</section>
+	    <!------------------- primary ------------------>
+		
+	</main>
+    <!------------------- page ---------------->
+
+	
 	<!-- <div class="header__content">
 		<h2 class="header__title">
 			Агентство недвижимости <span class="--text-color">ИНКОМ</span> Мы
@@ -137,7 +199,7 @@
 		</ul>
 	</div> -->
 	<!------------------- About --------------------->
-	<section class="about">
+	<!-- <section class="about">
 		<div class="container about__wrapper">
 			<span class="about__section-title">
 				<h2>
@@ -147,7 +209,7 @@
 			</span>
 			<div class="about__items">
 				<div class="about__item">
-					<!-- <img class="decor-circle-up" src="./src/assete/about/circle-top.svg" alt="circle" /> -->
+					 <img class="decor-circle-up" src="./src/assete/about/circle-top.svg" alt="circle" />
 
 					<div class="about__block">
 						<span class="about__number">01</span>
@@ -218,9 +280,9 @@
 				</div>
 
 				<div class="about__item">
-					<!-- <img class="decor-circle" src="./src/assete/about/circle.svg" alt="circle" /> -->
+					 <img class="decor-circle" src="./src/assete/about/circle.svg" alt="circle" /> -->
 
-					<div class="about__block">
+					<!-- <div class="about__block">
 						<span class="about__number">03</span>
 						<ul class="about__list-title">
 							<li>
@@ -247,18 +309,18 @@
 						<button class="about__offer-btn default-btn about__text-btn">
 							Получите превью предложения
 						</button>
-					</div>
+					</div> -->
 
-					<div class="about__img-block">
+					<!-- <div class="about__img-block">
 						<img src="./src/assete/about/info-img3.jpg" class="about__img" alt="image" />
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>  -->
 
 	<!-------------------- info-block ---------------->
-	<section class="info-block">
+	<!-- <section class="info-block">
 		<div class="container info-block__wrapper">
 			<div class="info-block__sale">
 				<h2 class="info-block__title">
@@ -310,17 +372,17 @@
 				<button class="info-block__btn default-btn">Больше информации</button>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!------------------- catalog-slider ----------------->
-	<section class="catalog">
+	<!-- <section class="catalog">
 		<div class="catalog__wrapper">
 			<h2 class="catalog__title">
 				Каталог <span class="--text-color">недвижимости</span>
 			</h2>
-			<!-- <img class="catalog-circle" src="./src/assete/catalog/catalog-circle.svg" alt="" /> -->
+			<img class="catalog-circle" src="./src/assete/catalog/catalog-circle.svg" alt="" />
 
-			<div class="swiper-container">
+			 <div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="card__image">
@@ -347,15 +409,16 @@
 					</div>
 				</div>
 				<div class="swiper-pagination"></div>
-			</div>
+			</div> 
 		</div>
-	</section>
+	</section> -->
 
-	<!-- <script src="./js/swiper.js"></script> -->
+	<script src="./js/swiper.js"></script>
 	<script src="./js/swiper.min.js"></script>
 	<script src="./js/catalog-slider.js"></script>
 	<script src="./js/burger.js"></script>
 	<script src="./js/filter.js"></script>
+	<script src="./js/rent.js"></script>
 </body>
 
 </html>

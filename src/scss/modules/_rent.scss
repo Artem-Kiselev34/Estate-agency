@@ -1,12 +1,14 @@
-.filter {
+.rent {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 165px; 
-	height: 75px;
+	grid-template-columns: 1fr 165px; 
+	max-width: 550px;
+	height: 44px;
 	border-radius: 4px;
-	background-color: aliceblue;
+	// background-color: aliceblue;
 	@media (max-width: 768px) {
-		grid-template-columns: repeat(3, 1fr);
-		padding: 10px 10px 5px;
+		// grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+		// padding: 10px 10px 5px;
 		height: auto;
 	}
 	@media (max-width: 475px) {
@@ -22,7 +24,7 @@
 	}
 
 	&__btn {
-		padding: 5px 5px 5px;
+		margin-left: 8px;
 		button {
 			cursor: pointer;
 			background-color: $mainColor;
@@ -38,15 +40,22 @@
 				background-color: #B28D4E;
 			}
 		}
-		@media (max-width: 768px) and (min-width: 475px) {
+		@media (max-width: 768px) and (min-width: 320px) {
 			grid-column: 1/4;
+			margin: 0;
 		}
 	}
 }
-.block-filter {
+.block-rent {
 	position: relative;
+	border: 2px solid #EAEEF2;
+	border-radius: 4px;
+	@media (max-width: 768px) {
+		height: 38px;
+		margin-bottom: 12px;
+	}
 	&__btn {
-		padding: 0 clamp(.5rem, calc(-6.95rem + 11vw), 4rem);
+		padding: 0 clamp(0.5rem, calc(-8.95rem + 11vw), 2rem);
 		display: flex;
 		justify-content: center;
 		height: 100%;
@@ -55,26 +64,25 @@
 
 	&__header {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 6px;
 	}
 
 	&__type {
-		white-space: nowrap;
-		font-size: clamp(1.5rem, calc(-6.95rem + 11vw), 1.6rem);
+		display: none;
+		padding: 3px 3px 0 0;
+		font-size: 1.6rem;
 		color: #858585;
-		padding-right: 2px;
 	}
 
 	&__icon {
 		position: relative;
         top: 8px;
-		left: 5px;
-        width: 14px;
-        height: 14px;
+		width: 14px;
+		height: 14px;
 		background: url(/src/assete/main-banner/chevron-down_gray.svg) right bottom no-repeat;
 		transform: translateY(-50%);
-		transition: transform .25s linear 0s;
+        transition: transform .25s linear 0s;
 		&._active{
 			transform: rotate(180deg) translateY(50%);
 		}
@@ -82,11 +90,11 @@
 
 	&__value {
 		white-space: nowrap;
-		color: #333;
+		color: #5f5d55;
 		font-weight: 600;
 		font-size: 1.8rem;
 		line-height: 2.2rem;
-		text-transform: capitalize;
+		margin-right: 5px;
 	}
 
 	&__dropdown {
@@ -125,6 +133,25 @@
 			&:hover{
 				background-color: #adadad;
 			}
+		}
+	}
+}
+
+.subscribe__btn {
+	button {
+		width: auto;
+        min-width: 160px;
+		cursor: pointer;
+		background-color: #CFA55B;
+		height: 100%;
+		border: none;
+		border-radius: 4px;
+		font-weight: 500;
+		font-size: 1.6rem;
+		color: #ffffff;
+		padding: 13px 10px;
+		&:active {
+			background-color: #B28D4E;
 		}
 	}
 }
