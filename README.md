@@ -12,7 +12,7 @@
 - header
 - home-hero
 - primary
-- About
+- requisition
 - Info-block
 - Catalog-slider
 - Сonsultation
