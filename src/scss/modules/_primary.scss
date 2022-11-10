@@ -21,7 +21,7 @@
 		line-height: 4.3rem;
 		font-size: clamp(2.5rem, 4vw, 3.6rem);
 		line-height: clamp(2.5rem, 4vw, 4.3rem);
-		color: #333;
+		color: $text-color;
 		padding: 0 0 16px;
 		@media (max-width: 600px) {
 			padding: 16px 0 16px;
@@ -33,14 +33,13 @@
 		font-weight: 200;
 		line-height: 2.9rem;
 		line-height: clamp(2rem, 3vw, 2.9rem);
-		color: #333;
+		color: $text-color;
 		padding: 0 0 clamp(1.5rem, calc(-6.95rem + 11vw), 4rem);
 	}
 
 	&__btn {
-		color: #333;
+		color: $text-color;
 		border-color: $mainColor;
-		// background-color: transparent;
 		padding: 12px 15px;
 		
 		@media (any-hover: hover) {

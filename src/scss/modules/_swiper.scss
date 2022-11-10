@@ -1,0 +1,37 @@
+
+.swiper-btn-next {
+	position: absolute;
+	width: 30px;
+    height: 40px;
+    background: $mainColor2;
+    border: 1px solid;
+    border-radius: 4px;
+    right: 0px;
+    bottom: 168px;
+    z-index: 1;
+	cursor: pointer;
+	&:hover{
+		background: $bg-color;
+	}
+	img {
+		position: relative;
+		left: 2px;
+		top: 7px;
+	}
+}
+.swiper-btn-prev {
+	position: absolute;
+	width: 30px;
+    height: 40px;
+    background: $mainColor2;
+    border: 1px solid;
+    border-radius: 4px;
+    bottom: 168px;
+    z-index: 1;
+	cursor: pointer;
+	img {
+		position: relative;
+		top: 7px;
+		left: 0;
+	}
+}

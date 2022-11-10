@@ -6,14 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./src/css/index.css" />
-	<link rel="stylesheet" href="./src/css/swiper.min.css" />
-	<link rel="stylesheet" href="./src/css/swiper.css" />
-	<title>Агенство недвижимости</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https: //fonts.googleapis.com/css2?family= Open+Sans:ital,wght@0,400;1,400;1,500;1,600;1,700 & семья= Open+Sans:wght@400;500;600;700;800 & display=swap" rel="stylesheet" />
-	<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-	<script src="./js/inputmask.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<title>Агенство недвижимости</title>
 </head>
 
 <body>
@@ -53,14 +50,15 @@
 		</div>
 		</div>
 	</header>
-	<!------------------- header ---------------->
+	<!------------------- header end ---------------->
 
 	<!------------------- page ---------------->
 	<main id="page" class="page">
-		<!--------------- home-hero --------------->
-		<section class="home-hero">
-			<div class="container home-hero__wrapper">
-				<div class="home-hero___title title">
+
+		<!--------------- home --------------->
+		<section class="home">
+			<div class="container home__wrapper">
+				<div class="home___title title">
 					<h2 class="title__text">Мы продаем квартиры<br>
 						в лучших жилых комплексах</h2>
 				</div>
@@ -118,7 +116,7 @@
 				</div>
 			</div>
 		</section>
-		<!--------------- home-hero --------------->
+		<!--------------- home end --------------->
 		
 		<!------------------- primary ------------------>
 		<section id="primary" class="primary">
@@ -170,9 +168,9 @@
 				<div class="primary__img"><img src="/src/assete/primary/businesspeople.jpg" alt=""></div>
 			</div>
 		</section>
-	    <!------------------- primary ------------------>
+	    <!------------------- primary end ------------------>
 
-		<!-------------------  -->
+		<!------------------- requisition ----------------->
 		<section class="requisition">
 			<div class="container requisition__wrapper">
 				<div class="requisition__title"><h2>Квартиры<br> на любой вкус</h2>
@@ -197,257 +195,869 @@
 			</div>
 	    	</div>
 		</section>
+		<!------------------- requisition end ----------------->
+
+		<!-------------------- catalog ------------------->
+		<section class="catalog">
+			<div class="catalog__content container">
+				<h2 class="catalog__title">Каталог недвижимости</h2>
+			  <div class="catalog__tabs tabs__container">
+				<ul class="tabs overflow" id="portfolio">
+				  <li class="tabs__item active">Квартиры</li>
+				  <li class="tabs__item">Новостройки</li>
+				  <li class="tabs__item">Аренда квартир</li>
+				  <li class="tabs__item">Загородная</li>
+				  <li class="tabs__item">Коммерческая</li>
+				</ul>		
+			  </div>
+			  
+				<div class="tab-container">
+			  
+				  <div class="tab-content activ">
+					<p>В нашей базе недвижимости представлены квартиры и комнаты любого типа, формата и площади. Обратившись в наше агентство недвижимости, каждый сможет быстро решить свой квартирный вопрос.</p>
+					<div class="slider__wrapper">
+					  <div class="swiper slider">
+						<!-- Слайдер -->
+						<div class="swiper-wrapper">
+			  
+						  <div class="swiper-slide">	 
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+					      </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+			  
+						</div>			  
+						<div class="swiper-btn-prev"><img src="./src/assete/catalog/chevron-left.svg" alt="left"></div>
+						<div class="swiper-btn-next"><img src="./src/assete/catalog/chevron-right.svg" alt="right"></div>
+					  </div>
+					</div>
+				  </div>
+
+				  <div class="tab-content ">
+					<p>Мы предлагаем квартиры разных ценовых категорий в новостройках Москвы и Московской области. На ваш выбор — квартиры с отделкой или без, на этапе строительства или оформленные в собственность.</p>
+					<div class="slider__wrapper">
+					  <div class="swiper slider">
+						<!-- Слайдер -->
+						<div class="swiper-wrapper">
+			  
+						  <div class="swiper-slide">	 
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+					      </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+			  
+						</div>			  
+						<div class="swiper-btn-prev"><img src="./src/assete/catalog/chevron-left.svg" alt="left"></div>
+						<div class="swiper-btn-next"><img src="./src/assete/catalog/chevron-right.svg" alt="right"></div>					
+					  </div>
+					</div>
+				  </div>
+			  
+				  <div class="tab-content ">
+					<p>Аренда комнат и квартир от эконом- до премиум-класса в любых районах Москвы и в Подмосковье: в нашей базе более 2500 уникальных предложений от собственников. Поможем выгодно сдать-снять жилье точно в указанный срок.</p>
+					<div class="slider__wrapper">
+					  <div class="swiper slider">
+						<!-- Слайдер -->
+						<div class="swiper-wrapper">
+			  
+						  <div class="swiper-slide">	 
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+					      </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+			  
+						</div>			  
+						<div class="swiper-btn-prev"><img src="./src/assete/catalog/chevron-left.svg" alt="left"></div>
+						<div class="swiper-btn-next"><img src="./src/assete/catalog/chevron-right.svg" alt="right"></div>					
+					  </div>
+					</div>
+				  </div>
+
+				  <div class="tab-content ">
+					<p>Мы предлагаем участки, дома, коттеджи и таунхаусы любой ценовой категории в коттеджных поселках по ценам застройщика, а также на вторичном рынке во всех районах Подмосковья.</p>
+					<div class="slider__wrapper">
+					  <div class="swiper slider">
+						<!-- Слайдер -->
+						<div class="swiper-wrapper">		  
+						  <div class="swiper-slide">	 
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+					      </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+			  
+						</div>			  
+						<div class="swiper-btn-prev"><img src="./src/assete/catalog/chevron-left.svg" alt="left"></div>
+						<div class="swiper-btn-next"><img src="./src/assete/catalog/chevron-right.svg" alt="right"></div>					
+					  </div>
+					</div>
+				  </div>
+
+				  <div class="tab-content ">
+				    <p>Специалисты нашего агентства проконсультируют по всем вопросам приобретения или аренды коммерческих объектов и помогут подобрать подходящий вариант офиса, производственного помещения или склада.</p>
+					<div class="slider__wrapper">
+					  <div class="swiper slider">
+						<!-- Слайдер -->
+						<div class="swiper-wrapper">
+			  
+						  <div class="swiper-slide">	 
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+					      </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/picunda.jpg" alt="img"></div>
+							  <div class="card__body">
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+
+						  <div class="swiper-slide">	
+							<div class="card-slide">
+							<div class="catalog__card card">
+							  <div class="card__image scale"><img src="/src/assete/catalog/zvenigorod.jpg" alt="img"></div>
+							  <div class="card__body">
+		
+								<!-- <div class="card__title">
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+									<div class="star"></div>
+								</div> -->
+								<div class="card__text">
+									<div class="card-subtitle">Отель "Zvenigorod" ("Гелиопарк Талассо")</div>
+									<div class="card-local">Россия,Московская область</div>
+								</div>
+								<div class="card__bottom">
+									<div class="min-price">от <span>3&nbsp;900&nbsp;₽</span></div>
+									
+									<div class="price-text">
+										<div class="caption">на человека</div>
+										<div class="caption">за ночь</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+			  
+						</div>			  
+						<div class="swiper-btn-prev"><img src="./src/assete/catalog/chevron-left.svg" alt="left"></div>
+						<div class="swiper-btn-next"><img src="./src/assete/catalog/chevron-right.svg" alt="right"></div>					
+					  </div>
+					</div>
+				  </div>
+				  		  
+				</div>			  
+			  </div>
+		</section>
+		<!-------------------- catalog end ------------------->
 	</main>
-    <!------------------- page ---------------->
+    <!------------------- page end ---------------->
 
-	
-	<!-- <div class="header__content">
-		<h2 class="header__title">
-			Агентство недвижимости <span class="--text-color">ИНКОМ</span> Мы
-			гарантировано<br />
-			продадим вашу недвижимость<br />
-			на<span class="--text-color"> 15% дороже</span>
-		</h2>
-		<button class="default-btn header__btn">
-			Узнать стоимость продажи
-		</button>
-		<ul class="header__list">
-			<li class="header__dot header__subtitle">
-				Продано недвижимости на 3 млрд <br />рублей за 5 лет
-			</li>
-			<li class="header__dot header__subtitle">
-				Юридическое сопровождение
-			</li>
-			<li class="header__dot header__subtitle">
-				Квартиры по Москве и области <br />на любой выбор
-			</li>
-		</ul>
-	</div> -->
-	<!------------------- About --------------------->
-	<!-- <section class="about">
-		<div class="container about__wrapper">
-			<span class="about__section-title">
-				<h2>
-					Почему мы продаем дорого и делаем это в
-					<span class="--text-color">2 раза быстрее</span>
-				</h2>
-			</span>
-			<div class="about__items">
-				<div class="about__item">
-					 <img class="decor-circle-up" src="./src/assete/about/circle-top.svg" alt="circle" />
 
-					<div class="about__block">
-						<span class="about__number">01</span>
-						<ul class="about__list-title">
-							<li>
-								<h2 class="about__title">Собственная база покупателей</h2>
-							</li>
-							<li class="about__decor-title">
-								<p class="about__subtitle">
-									Создаем спрос на объект еще до размещения <br />его в
-									рекламе
-								</p>
-							</li>
-							<li class="about__decor-title">
-								<p class="about__subtitle">
-									Используем закрытые базы риэлторов
-								</p>
-							</li>
-							<li class="about__decor-title">
-								<p class="about__subtitle">
-									Продаем через собственную наработанную <br />базу из 6000
-									обьектов
-								</p>
-							</li>
-						</ul>
-						<button class="about__offer-btn default-btn about__text-btn">
-							Получите превью предложения
-						</button>
-					</div>
-
-					<div class="about__img-block">
-						<img src="./src/assete/about/info-img.jpg" class="about__img" alt="image" />
-					</div>
-				</div>
-
-				<div class="about__item">
-					<div class="about__img-block">
-						<img src="./src/assete/about/info-img2.jpg" class="about__img" alt="image" />
-					</div>
-					<div class="about__block info-card__main-block">
-						<span class="about__number">02</span>
-						<ul class="about__list-title">
-							<li>
-								<h2 class="about__title">Собственная база покупателей</h2>
-							</li>
-							<li class="about__decor-title">
-								<p class="about__subtitle">
-									Создаем спрос на объект еще до размещения <br />его в
-									рекламе
-								</p>
-							</li>
-							<li class="about__decor-title">
-								<p class="about__subtitle">
-									Используем закрытые базы риэлторов
-								</p>
-							</li>
-							<li class="about__decor-title">
-								<p class="about__subtitle">
-									Продаем через собственную наработанную <br />базу из 6000
-									обьектов
-								</p>
-							</li>
-						</ul>
-						<button class="about__offer-btn default-btn about__text-btn">
-							Получите превью предложения
-						</button>
-					</div>
-				</div>
-
-				<div class="about__item">
-					 <img class="decor-circle" src="./src/assete/about/circle.svg" alt="circle" /> -->
-
-					<!-- <div class="about__block">
-						<span class="about__number">03</span>
-						<ul class="about__list-title">
-							<li>
-								<h2 class="about__title">Собственная база покупателей</h2>
-							</li>
-							<li class="about__decor-title">
-								<p class="about__subtitle">
-									Создаем спрос на объект еще до размещения <br />его в
-									рекламе
-								</p>
-							</li>
-							<li class="about__decor-title">
-								<p class="about__subtitle">
-									Используем закрытые базы риэлторов
-								</p>
-							</li>
-							<li class="about__decor-title">
-								<p class="about__subtitle">
-									Продаем через собственную наработанную <br />базу из 6000
-									обьектов
-								</p>
-							</li>
-						</ul>
-						<button class="about__offer-btn default-btn about__text-btn">
-							Получите превью предложения
-						</button>
-					</div> -->
-
-					<!-- <div class="about__img-block">
-						<img src="./src/assete/about/info-img3.jpg" class="about__img" alt="image" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>  -->
-
-	<!-------------------- info-block ---------------->
-	<!-- <section class="info-block">
-		<div class="container info-block__wrapper">
-			<div class="info-block__sale">
-				<h2 class="info-block__title">
-					<span class="--text-color">Продажа недвижимости в</span>
-					<br />Москве и Подмосковье
-				</h2>
-				<p class="info-block__subtitle">
-					Мы оказываем риэлторские услуги по аренде и продаже недвижимости во
-					всех сегментах. С помощью наших специалистов вы сможете купить
-					элитную недвижимость в Москве и Подмосковье, а также приобрести
-					жилье эконом-класса.
-				</p>
-				<p class="info-block__subtitle">
-					Специалисты нашего агентства помогут в подборе оптимального для вас
-					варианта и оформят сделку по купле-продаже недвижимости максимально
-					надежно и быстро!
-				</p>
-			</div>
-
-			<div class="info-block__sale-card">
-				<img class="info-block__decor-card" src="./src/assete/info-block/decor-card.svg" alt="" />
-
-				<ul>
-					<li class="info-block__card-title">
-						<h3>
-							Продайте недвижимость в залоге, ипотеке или с долгами без потери
-							в цене
-						</h3>
-					</li>
-					<li class="info-block__card-subtitle">
-						<p>
-							Агентство недвижимости ИНКОМ — все риэлторские услуги: покупка,
-							продажа, обмен, аренда жилой и коммерческой недвижимости Москвы
-							и Подмосковье
-						</p>
-					</li>
-					<li class="info-block__card-subtitle info-block__decor">
-						<p>Создаем спрос на объект еще до размещения его в рекламе</p>
-					</li>
-					<li class="info-block__card-subtitle info-block__decor">
-						<p>Используем закрытые базы риэлторов</p>
-					</li>
-					<li class="info-block__card-subtitle info-block__decor">
-						<p>
-							Продаем через собственную наработанную базу из 6000 обьектов
-						</p>
-					</li>
-				</ul>
-				<button class="info-block__btn default-btn">Больше информации</button>
-			</div>
-		</div>
-	</section> -->
-
-	<!------------------- catalog-slider ----------------->
-	<!-- <section class="catalog">
-		<div class="catalog__wrapper">
-			<h2 class="catalog__title">
-				Каталог <span class="--text-color">недвижимости</span>
-			</h2>
-			<img class="catalog-circle" src="./src/assete/catalog/catalog-circle.svg" alt="" />
-
-			 <div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="card__image">
-							<img src="./src/assete/catalog/info-img.jpg" alt="img" />
-						</div>
-					</div>
-
-					<div class="swiper-slide">
-						<div class="card__image">
-							<img src="./src/assete/catalog/info-img2.jpg" alt="img" />
-						</div>
-					</div>
-
-					<div class="swiper-slide">
-						<div class="card__image">
-							<img src="./src/assete/catalog/info-img2.jpg" alt="img" />
-						</div>
-					</div>
-
-					<div class="swiper-slide">
-						<div class="card__image scale">
-							<img src="./src/assete/catalog/info-img3.jpg" alt="img" />
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div> 
-		</div>
-	</section> -->
-
-	
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+	<script src="./js/inputmask.min.js"></script>
 	<script src="./js/inputmask.min.js"></script>
 	<script src="./js/validate.js"></script>
-	<script src="./js/swiper.js"></script>
-	<script src="./js/swiper.min.js"></script>
-	<script src="./js/catalog-slider.js"></script>
 	<script src="./js/burger.js"></script>
 	<script src="./js/filter.js"></script>
 	<script src="./js/rent.js"></script>
-	<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="./js/slider.js"></script>
 
 </body>
 
