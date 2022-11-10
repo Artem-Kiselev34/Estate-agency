@@ -18,7 +18,7 @@
 			max-width: 285px;
 			padding-top: clamp(11rem, 10vw, 10.8rem);
 			margin-right: 18px;
-			color: aliceblue;
+			color: $mainColor2;
 		}
 	
 	}
@@ -26,16 +26,15 @@
 
 .form-block {
 	padding: 70px 0 70px;
-	margin-bottom: 70px;
 	@media (max-width: 768px) {
-		padding: 38px 0 0;
+		padding: 28px 0 0;
 	}
 
 	&__text {
 		font-size: 1.6rem;
 		line-height: 2rem;
 		font-weight: 500;
-		color: aliceblue;
+		color: $mainColor2;
 		margin-bottom: 22px;
 	}
 
@@ -52,7 +51,6 @@
 .form {
 	display: flex;
 	margin-bottom: 70px;
-
 	@media (max-width: 768px) {
 		flex-direction: column;
 		margin-bottom: 12px;
@@ -60,13 +58,17 @@
 
 	&__box {
 		width: 100%;
-		margin-right: 10px;
+		height: 70px;
+		margin: 0 10px 10px 0;
+		@media (max-width: 600px) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__input {
-		box-shadow: inset 20px 20px 20px 20px #ffff;
+		box-shadow: inset 20px 20px 20px 20px $mainColor2;
 		outline: none;
-		background: #fff !important;
+		background: $mainColor2 !important;
 		font-size: 16px;
 		width: 100%!important;
 		padding: 15px 0 15px 15px;

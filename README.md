@@ -10,11 +10,10 @@
 
 1.Structure site
 - header
-- home-hero
+- home
 - primary
 - requisition
-- Info-block
-- Catalog-slider
+- catalog
 - Сonsultation
 - Footer
 
