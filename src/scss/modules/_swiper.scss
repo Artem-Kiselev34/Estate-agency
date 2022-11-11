@@ -10,8 +10,8 @@
     bottom: 168px;
     z-index: 1;
 	cursor: pointer;
-	&:hover{
-		background: $bg-color;
+	&:hover {
+		background: #faf4f4;
 	}
 	img {
 		position: relative;
@@ -19,6 +19,7 @@
 		top: 7px;
 	}
 }
+
 .swiper-btn-prev {
 	position: absolute;
 	width: 30px;
@@ -29,6 +30,9 @@
     bottom: 168px;
     z-index: 1;
 	cursor: pointer;
+	&:hover {
+		background: #faf4f4;
+	}
 	img {
 		position: relative;
 		top: 7px;
