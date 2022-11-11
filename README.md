@@ -4,6 +4,7 @@
 2.git add . | В коммит добавятся все изменённые файлы.
 3.git commit -m "comment" | Создать коммит.
 4.git push origin branch_name
+-> go Github/new pull request
 5.git checkout develop
 6.git pull origin develop
 7.git branch feature/branch_name

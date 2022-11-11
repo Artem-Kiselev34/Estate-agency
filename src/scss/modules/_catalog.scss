@@ -19,8 +19,12 @@
 			}			
 		}
 		&__title {
-			font-size: 40px;
+			font-size: 4rem;
+			line-height: 4rem;
 			color: $text-color;
+			@media (max-width: 425px) {
+				font-size: 36px;
+			}
 		}
 }
 .tabs {
@@ -38,7 +42,7 @@
 		min-width: 180px;
 		font-size: 1.6rem;
 		font-weight: 600;
-		color: #333333;
+		color: $text-color;
 		border: 2px solid $mainColor;
 		border-radius: 6px;
 		-moz-border-radius: 6px;
