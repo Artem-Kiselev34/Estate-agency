@@ -167,7 +167,7 @@
 		}
 	}
 	&:active {
-		background-color: #B28D4E;
+		background-color: $btn-bg-color;
 	}
 	@media (max-width: 610px) {
 		display: none;

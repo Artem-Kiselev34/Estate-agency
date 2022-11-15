@@ -35,7 +35,7 @@
 			color: $mainColor2;
 			padding: 10px 10px 10px;
 			&:active {
-				background-color: $mainColor;
+				background-color: $btn-bg-color;
 			}
 		}
 		@media (max-width: 768px) and (min-width: 475px) {

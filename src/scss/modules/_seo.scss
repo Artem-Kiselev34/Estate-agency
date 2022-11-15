@@ -1,0 +1,99 @@
+ .seo {
+ 	background-color: #f6f6f6;
+ 	margin-bottom: 150px;
+
+ 	&__wrapper {
+ 		border-bottom: 1px solid $border-color;
+ 		border-top: 1px solid $border-color;
+ 		padding: 5px 15px 25px 15px;
+ 	}
+
+ 	&__title {
+ 		font-size: 1.6rem;
+ 		line-height: 2rem;
+ 		font-weight: 700;
+ 		margin: 20px 0 15px;
+ 		color: $text-color;
+ 	}
+
+ 	&__links {
+ 		column-count: 6;
+ 		column-gap: .5em;
+
+ 		@media (max-width: 374px) {
+ 			column-count: 1;
+ 			column-gap: 1em;
+ 		}
+
+ 		@media (min-width: 375px) {
+ 			column-count: 2;
+ 			column-gap: 1em;
+ 		}
+
+ 		@media (min-width: 520px) {
+ 			column-count: 3;
+ 			column-gap: 1em;
+ 		}
+
+ 		@media (min-width: 680px) {
+ 			column-count: 4;
+ 			column-gap: 1em;
+ 		}
+
+ 		@media (min-width: 860px) {
+ 			column-count: 5;
+ 		}
+
+ 		@media (min-width: 1024px) {
+ 			column-count: 6;
+ 			column-gap: 1em;
+ 		}
+ 	}
+
+ 	&__item {
+ 		width: 150px;
+ 		display: inline-block;
+ 		padding: 0 10px 5px 0;
+ 	}
+
+ 	&__link {
+ 		display: inline-block;
+ 		white-space: nowrap;
+ 		-o-text-overflow: ellipsis;
+ 		text-overflow: ellipsis;
+ 		color: $text-color;
+ 		text-decoration: none;
+ 		font-size: 1.4rem;
+ 		line-height: 2rem;
+ 		width: 150px;
+ 		overflow: hidden;
+		cursor: pointer;
+ 	}
+ }
+
+ .open-close1 {
+ 	display: none;
+ }
+
+ .btn {
+ 	color: #0088cf;
+ 	font-size: 1.4rem;
+ 	outline: none;
+ 	cursor: pointer;
+ 	border: none;
+ 	background: none;
+	padding-top: 8px;
+
+ 	&:hover {
+ 		text-decoration: underline;
+ 		color: $mainColor;
+ 	}
+ }
+
+ .open-close2 {
+ 	display: none;
+ }
+
+ .visible {
+ 	display: block;
+ }

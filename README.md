@@ -15,9 +15,9 @@
 - primary
 - requisition
 - catalog
-- Сonsultation
+- seo
 - Footer
 
 2.Общие элементы
 - default-btn
-- info-card
+

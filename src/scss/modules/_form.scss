@@ -87,9 +87,12 @@
 		padding: 8px;
 		background: $mainColor;
 		font-size: 16px;
-		border: #CFA55B;
+		border: $btn-bg-color;
 		border-radius: 4px;
 		cursor: pointer;
+		&:active {
+			background-color: $btn-bg-color;
+		}
 		@media (max-width: 600px) {
 			height: 42px;
 		}
