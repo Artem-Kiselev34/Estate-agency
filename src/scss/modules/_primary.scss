@@ -50,7 +50,7 @@
 			}
         }
 		&:active {
-			background-color: #B28D4E;
+			background-color: $btn-bg-color;
 		}
 		
 	}
@@ -61,6 +61,37 @@
 			max-width: 100%;
 		}
 	}
+
+	&__subscribe-btn {
+		button {
+			width: auto;
+			min-width: 160px;
+			cursor: pointer;
+			background-color: $mainColor;
+			border: none;
+			border-radius: 4px;
+			font-weight: 500;
+			font-size: 1.6rem;
+			color: $mainColor2;
+			padding: 13px 10px;
+			&:active {
+				background-color: #B28D4E;
+			}
+		}
+		// button {
+		// 	background-color: #b99379;
+		// 	border: none;
+		// 	border-radius: 4px;
+		// 	font-weight: 500;
+		// 	font-size: 1.6rem;
+		// 	color: #ffffff;
+		// 	padding: 12px 28px 12px;
+		// 	cursor: pointer;
+		// 	&:active {
+		// 		background-color: $btn-bg-color;
+		// 	}
+		// }
+	}
 }
 
 .col {
@@ -68,3 +99,4 @@
 	flex-direction: column;
 	}
 }
+
