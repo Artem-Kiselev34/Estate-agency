@@ -7,7 +7,10 @@
 -> go Github/new pull request
 5.git checkout develop
 6.git pull origin develop
-7.git branch feature/branch_name
+
+------- create new branch -------
+1.git branch feature/new-branch_name
+2.git checkout feature/branch_name
 
 1.Structure site
 - header
