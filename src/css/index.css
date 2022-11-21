@@ -198,7 +198,7 @@ a {
 
 .home {
   position: relative;
-  background: linear-gradient(to top, rgba(89, 106, 114, 0), rgba(87, 99, 112, 0.6)), url("/src/assete/home/main-citycom.jpg") no-repeat;
+  background: linear-gradient(to top, rgba(89, 106, 114, 0), rgba(87, 99, 112, 0.6)), url("../assete/home/main-citycom.jpg") no-repeat;
   background-size: cover; }
   .home__wrapper {
     max-width: 930px;
@@ -494,7 +494,7 @@ a {
 
 .requisition {
   display: flex;
-  background: url("/src/assete/form/bg2.jpg") no-repeat;
+  background: url("../assete/form/bg2.jpg") no-repeat;
   margin-bottom: 50px; }
   .requisition__wrapper {
     display: flex; }
@@ -816,7 +816,7 @@ a {
 
 .footer {
   background: #0f0d1d;
-  background-image: url("/src/assete/footer/footer_bg.png");
+  background-image: url("../assete/footer/footer_bg.png");
   width: 100%; }
   .footer__content {
     margin: auto;
