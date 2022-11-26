@@ -1,11 +1,9 @@
 .card-slide {
 	height: auto;
 	padding: 0 10px 10px;
-
-    //   &__card {
-    //   }
 }
-.card {
+
+.item {
 	overflow: hidden;
 	height: 100%;
 	display: flex;
@@ -14,60 +12,84 @@
 	-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 	border-radius: 4px;
+	padding-bottom: 15px;
 
-
-&__image {
-	overflow: hidden;
-	width: 100%;
-	  img {
-		width: 470px;
-		display: block;
+	&__image {
+		overflow: hidden;
 		width: 100%;
-		height: 100%;
-		-o-object-fit: cover;
-		object-fit: cover;
+		img {
+			width: 470px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+	}
+	&__info {
+		padding: 12px;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		background: $mainColor2;
+	}
+	&__desc {
+		font-size: 1.6rem;
+		flex: 1;
+		margin-bottom: 15px;
+		font-weight: 300;
+	}
+	&__name {
+		height: 98px !important;
+		line-height: 2.2rem;
+		font-weight: 700;
+		font-size: 1.6rem;
+		margin-bottom: 12px;
+		p {
+			font-size: 1.6rem;
+			line-height: 2rem;
+			font-weight: normal;
+			color: $text-color;
+			margin-bottom: 30px;
+		}
+	}
+	&__metro {
+		font-size: 1.3rem !important;
+		font-weight: 400;
+		font-family: Rotonda, sans-serif;
+		color: $text-color;
+	}
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 15px;
+		border-bottom: 1px #D6D6D6 solid;
+		margin-bottom: 30px;
+	}
+	&__square {
+		display: flex;
+		img {
+			margin-right: 10px;
+		}
+	}
+	&__square-text {
+		position: relative;
+		top: 2px;
+		font-size: 12px;
+		color: #2e2e32;
+	}
+	&__rooms {
+		display: flex;
+		align-items: center;
+		img {
+			margin-right: 10px;
+		}
+	}
+	&__rooms-text {
+		font-size: 12px;
+	}
+	&__price {
+		font-size: 2.2rem;
 	}
 }
-
-&__body {
-	padding: 12px;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	background: #fff;
-}
-
-&__text {
-	font-size: 16px;
-	flex: 1;
-	margin-bottom: 15px;
-	font-weight: 300;
-}
-
-&__bottom {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-}
-
-.card-subtitle {
-	line-height: 2.2rem;
-	font-weight: 700;
-	margin-bottom: 12px;
-	font-size: 1.6rem;
-}
-.card-local {
-	font-size: 12px!important;
-	font-weight: 400;
-	font-family: Rotonda,sans-serif!important;
-	color: #2e2e32;
-}
-.min-price {
-	padding: 12px;
-	color: #2e2e32;
-}
-.price-text {
-    padding: 12px;
-}
-

@@ -1,6 +1,7 @@
 .requisition {
 	display: flex;
     background: url('../assete/form/bg2.jpg') no-repeat;
+	background-size: cover;
 	margin-bottom: 50px;
 
 	&__wrapper {
@@ -40,6 +41,7 @@
 
 	&__bottom-text {
 		color: $mainColor2;
+		margin-bottom: 5px;
 	}
 
 	&__link {
@@ -69,7 +71,7 @@
 		box-shadow: inset 20px 20px 20px 20px $mainColor2;
 		outline: none;
 		background: $mainColor2 !important;
-		font-size: 16px;
+		font-size: 1.6rem;
 		width: 100%!important;
 		padding: 15px 0 15px 15px;
 		border: none;
@@ -86,7 +88,7 @@
 		height: 49px;
 		padding: 8px;
 		background: $mainColor;
-		font-size: 16px;
+		font-size: 1.6rem;
 		border: $btn-bg-color;
 		border-radius: 4px;
 		cursor: pointer;
@@ -100,6 +102,6 @@
 }
 
 .just-validate-error-label {
-	font-size: 12px;
+	font-size: 1.2rem;
 	margin-bottom: 10px;
 }

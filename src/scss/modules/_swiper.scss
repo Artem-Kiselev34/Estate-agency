@@ -3,16 +3,19 @@
 	position: absolute;
 	width: 30px;
     height: 40px;
-    background: $mainColor2;
     border: 1px solid;
     border-radius: 4px;
     right: 0px;
     bottom: 168px;
     z-index: 1;
 	cursor: pointer;
-	&:hover {
-		background: #faf4f4;
+	
+	@media (any-hover: hover) {
+		&:hover {
+			background: #faf4f4;
+		}
 	}
+	
 	img {
 		position: relative;
 		left: 2px;
@@ -24,15 +27,18 @@
 	position: absolute;
 	width: 30px;
     height: 40px;
-    background: $mainColor2;
     border: 1px solid;
     border-radius: 4px;
     bottom: 168px;
     z-index: 1;
 	cursor: pointer;
-	&:hover {
-		background: #faf4f4;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: #faf4f4;
+		}
 	}
+
 	img {
 		position: relative;
 		top: 7px;

@@ -4,9 +4,6 @@ html {
 	color: $text-color;
 }
 
-._lock {
-	overflow: hidden;
-}
 body {
 	font-family: 'Open Sans', sans-serif;
 	
@@ -30,4 +27,6 @@ ul {
 	padding: 0 15px;
 }
 
-
+._lock {
+	overflow: hidden;
+}

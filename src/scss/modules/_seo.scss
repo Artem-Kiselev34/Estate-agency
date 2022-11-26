@@ -1,6 +1,5 @@
  .seo {
- 	background-color: #F6F4EF;
- 	// margin-bottom: 150px;
+ 	background-color: $bg-block;
 
  	&__wrapper {
  		border-bottom: 1px solid $border-color;
@@ -67,7 +66,13 @@
  		line-height: 2rem;
  		width: 150px;
  		overflow: hidden;
-		cursor: pointer;
+ 		cursor: pointer;
+
+		 @media (any-hover: hover) {
+			&:hover {
+				color: #0088cf;
+			}
+		}
  	}
  }
 
@@ -82,11 +87,13 @@
  	cursor: pointer;
  	border: none;
  	background: none;
-	padding-top: 8px;
+ 	padding-top: 8px;
 
- 	&:hover {
- 		text-decoration: underline;
- 		color: $mainColor;
+ 	@media (any-hover: hover) {
+ 		&:hover {
+ 			text-decoration: underline;
+ 			color: $mainColor;
+ 		}
  	}
  }
 
