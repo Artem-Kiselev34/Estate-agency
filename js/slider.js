@@ -1,24 +1,16 @@
 
-let swipers = document.querySelectorAll(".slider"); //Находим все слайдеры в tabs
+let swipers = document.querySelectorAll(".slider");
 
 swipers.forEach(value => {
   let swiper = new Swiper(value, {
     slidesPerView: 4,
-    // spaceBetween: 0,
     loop: true,
     init: false,
    
     navigation: {
-      nextEl: value.querySelector('.swiper-btn-next'), //инициализируем кнопки управления у ДАННОГО слайдера через поиск querySelector()
-      prevEl: value.querySelector('.swiper-btn-prev'), //инициализируем кнопки управления у ДАННОГО слайдера через поиск querySelector()
+      nextEl: value.querySelector('.swiper-btn-next'),
+      prevEl: value.querySelector('.swiper-btn-prev'),
     },
-    
-
-
-    // pagination: {
-    //   el: value.querySelector(".swiper-pagination"), //инициализируем пагиницию у ДАННОГО слайдера через поиск querySelector()
-    //   clickable: true,
-    // },
 
     breakpoints: {
       320: {
@@ -30,24 +22,13 @@ swipers.forEach(value => {
       768: {
         slidesPerView: 3,
       },
-      991: {
+      1025: {
         slidesPerView: 4,
       },
     },
     observer: true,
     observerParents: true
   });
-
-  // swiper.on("slideChange afterInit init", function() {
-  //   let currentSlide = this.activeIndex + 1;
-  //   value.querySelector('.counter').innerHTML = `
-  // <span class="counter__current">
-  // ${currentSlide < 5 ? '0' + currentSlide : currentSlide}
-  // </span>  
-  // <span class="counter__total">
-  //   /${this.slides.length}
-  // </span>`;
-  // });
 
   swiper.init();
 });

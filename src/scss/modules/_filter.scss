@@ -13,14 +13,12 @@
 		grid-template-columns: 1fr;
 		gap: 10px;
 	}
-
 	&__block {
 		&:nth-child(2) {
 			border-right: 1px solid $border-color;
 			border-left: 1px solid $border-color;
 		}
 	}
-
 	&__btn {
 		padding: 5px 5px 5px;
 		button {
@@ -43,6 +41,7 @@
 		}
 	}
 }
+
 .block-filter {
 	position: relative;
 	&__btn {
@@ -52,34 +51,30 @@
 		height: 100%;
 		flex-direction: column;
 	}
-
 	&__header {
 		display: flex;
 		align-items: center;
 		margin-bottom: 6px;
 	}
-
 	&__type {
 		white-space: nowrap;
 		font-size: clamp(1.5rem, calc(-6.95rem + 11vw), 1.6rem);
 		color: $text-color-2;
 		padding-right: 2px;
 	}
-
 	&__icon {
 		position: relative;
         top: 8px;
 		left: 5px;
         width: 14px;
         height: 14px;
-		background: url(/src/assete/home/chevron-down_gray.svg) right bottom no-repeat;
+		background: url(../scss/common/chevron-down_gray.svg) right bottom no-repeat;
 		transform: translateY(-50%);
 		transition: transform .25s linear 0s;
 		&._active{
 			transform: rotate(180deg) translateY(50%);
 		}
 	}
-
 	&__value {
 		white-space: nowrap;
 		color: $text-color;
@@ -88,7 +83,6 @@
 		line-height: 2.2rem;
 		text-transform: capitalize;
 	}
-
 	&__dropdown {
 		position: absolute;
 		z-index: 3;
@@ -109,11 +103,8 @@
 			visibility: visible;
 			pointer-events: all;
 			transform: translateY(5px);
-		}
-		
-
+		}	
 	}
-
 	&__item {
 		padding: 10px;
 		font-size: 1.6rem;

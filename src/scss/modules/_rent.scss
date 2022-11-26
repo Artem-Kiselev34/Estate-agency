@@ -10,7 +10,6 @@
 	}
 	@media (max-width: 475px) {
 		grid-template-columns: 1fr;
-		// gap: 10px;
 	}
 
 	&__block {
@@ -77,7 +76,7 @@
         top: 8px;
 		width: 14px;
 		height: 14px;
-		background: url(/src/assete/main-banner/chevron-down_gray.svg) right bottom no-repeat;
+		background: url(../scss/common/chevron-down_gray.svg) right bottom no-repeat;
 		transform: translateY(-50%);
         transition: transform .25s linear 0s;
 		&._active{
@@ -133,21 +132,3 @@
 		}
 	}
 }
-
-// .subscribe__btn {
-// 	button {
-// 		width: auto;
-//         min-width: 160px;
-// 		cursor: pointer;
-// 		background-color: $mainColor;
-// 		border: none;
-// 		border-radius: 4px;
-// 		font-weight: 500;
-// 		font-size: 1.6rem;
-// 		color: $mainColor2;
-// 		padding: 13px 10px;
-// 		&:active {
-// 			background-color: #B28D4E;
-// 		}
-// 	}
-// }
